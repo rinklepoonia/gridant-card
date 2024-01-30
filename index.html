@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grident-card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .w-12 {
+            width: 40%;
+            height: 20%;
+        }
+
+        .card-1 {
+            max-width: 330px;
+            border-radius: 10px;
+            background: white;
+            margin-top: 50px;
+            padding: 20px;
+            border-style: solid;
+            border-width: 3px;
+            /* border: linear-gradient(to bottom, green 0%, green 50%, black 50%, black 100%); */
+            /* border-image: linear-gradient(to bottom right, yellow, red) 100%; */
+            border-image: linear-gradient(to right, green, darkorchid)1;
+            background-image: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+            /* background-image: linear-gradient(to bottom right, yellow, red); */
+        }
+
+        .linear {
+            width: 30vw;
+            height: 50vh;
+            background-image: linear-gradient(to top right, red, pink, blue, orange);
+            border: 5px solid red;
+            border-image: linear-gradient(green 20%, pink 80%)1;
+            border-radius: 50px;
+            border: double 5px transparent;
+            margin: 50px;
+        }
+
+        /* .radial {
+            width: 30vw;
+            height: 50vh;
+            background-image: radial-gradient(red, pink 40%, blue, orange);
+        } */
+
+        /* .repeating {
+            width: 30vw;
+            height: 50vh;
+            background-image: repeating-linear-gradient(90deg, purple, red 30px, blue 30px, blue 40px, green 40px, green 20px)
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="card-1 w-100">
+            <div class="d-flex justify-content-center mt-80"><img class="w-12"
+                    src="./assets/images/squirrel-sitting-tree.avif" alt="squirrel-sitting-tree.avif"></div>
+            <p class="text-white mx-auto text-center mt-5">Free Plan</p>
+            <p class="text-white mx-auto text-center"> Unlimited Bandwitch </p>
+            <p class="text-white mx-auto text-center">Works on All Devices </p>
+            <p class="text-white mx-auto text-center">Works on All Devices </p>
+        </div>
+    </section>
+
+    <div class="repeating">
+    </div>
+    <div class="linear"></div>
+    <div class="radial"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
